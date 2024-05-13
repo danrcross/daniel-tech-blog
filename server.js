@@ -25,7 +25,7 @@ const sess = {
     db: sequelize,
   }),
 };
-
+console.log(process.env.JAWSDB_URL);
 app.use(session(sess));
 
 // const hbs = exphbs.create({ helpers });
