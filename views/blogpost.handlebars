@@ -1,0 +1,17 @@
+<section class="card" data-id={{id}}>
+    <header>{{title}}</header>
+    <p>{{content}}</p>
+    <p>{{user.username}}</p>
+    <p>{{post_date}}</p>
+    {{#if loggedIn}}
+    <form>
+        <label for="comment">Leave a comment:</label>
+        <input type="text" id="comment-entry" name="comment-entry" required>
+        <button id="com-sub-btn"type="submit">Submit</button>
+    </form>
+    {{/if}}
+    {{#each comments as |comment|}}
+    {{> comment-details}}
+    {{/each}}
+</section>
+<script src="/js/comment.js"></script>
