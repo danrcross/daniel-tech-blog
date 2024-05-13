@@ -121,8 +121,6 @@ router.get("/blogpost/:id", async (req, res) => {
 
     const blogpost = bpData.get({ plain: true });
     const comments = comData.map((comment) => comment.get({ plain: true }));
-    console.log(blogpost);
-    console.log(comments);
     res.render("blogpost", {
       ...blogpost,
       comments: comments,
