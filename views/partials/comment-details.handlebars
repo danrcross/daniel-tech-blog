@@ -1,11 +1,5 @@
-<section class="card" data-id={{id}}>
+<section class="card comment" data-id={{id}}>
     <p>{{content}}</p>
-    {{#if user.username}}
-    <p>{{user.username}}</p>
-    {{else}}
-    <p>Guest User</p>
-    {{/if}}
-    <p>{{post_date}}</p>
-    
+    <p class="comment-info">Comment made by: <span class="username">{{user.username}}</span> @ {{post_date}}</p>    
   </a>
 </section>

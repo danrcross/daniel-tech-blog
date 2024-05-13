@@ -1,8 +1,7 @@
-<section class="card" data-id={{id}}>
-    <header>{{title}}</header>
+<section class="card blogpost" data-id={{id}}>
+    <h2 class="post-title">{{title}}</h2>
     <p>{{content}}</p>
-    <p>{{user.username}}</p>
-    <p>{{post_date}}</p>
+    <p class="post-info">Post made by: <span class="username">{{user.username}}</span> @ {{post_date}}</p>
     {{#if loggedIn}}
     <form>
         <label for="comment">Leave a comment:</label>
@@ -10,6 +9,9 @@
         <button id="com-sub-btn"type="submit">Submit</button>
     </form>
     {{/if}}
+   
+</section>
+<section id="comment-box">
     {{#each comments as |comment|}}
     {{> comment-details}}
     {{/each}}

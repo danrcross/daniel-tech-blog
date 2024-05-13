@@ -1,7 +1,6 @@
-<section class="card" data-id={{id}}>
-    <header>{{title}}</header>
+<section class="card blogpost" data-id={{id}}>
+    <h2 class="post-title">{{title}}</h2>
     <p>{{content}}</p>
-    <p>{{post_date}}</p>
-    <p>{{user.username}}</p>
+    <p class="post-info">Post made by: <span class="username">{{user.username}}</span> @ {{post_date}}</p>
   </a>
 </section>
