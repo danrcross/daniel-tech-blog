@@ -13,7 +13,9 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace("/");
+      setTimeout(() => {
+        document.location.replace("/");
+      }, 100);
     } else {
       alert("Failed to sign up.");
     }
