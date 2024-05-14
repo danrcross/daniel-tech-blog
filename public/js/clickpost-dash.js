@@ -7,14 +7,11 @@ const clickPostHandler = async (event) => {
 const delBtnHandler = async (event) => {
   const cardEl = event.target.closest(".card");
   const postId = cardEl.getAttribute("data-id");
-  console.log("delete");
   const response = await fetch(`/api/blogpost/${postId}`, {
     method: "DELETE",
     headers: { "Content-Type": "application/json" },
   });
-  console.log(response);
   if (response.ok) {
-    console.log(response);
     window.location.replace("/dashboard");
   } else {
     alert("Failed to delete.");

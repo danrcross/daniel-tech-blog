@@ -5,6 +5,7 @@ body {
 .card {
   border: solid black 2px;
   background-color: white;
+  padding: 3px;
 }
 
 h1 {
@@ -65,4 +66,29 @@ nav {
   margin-top: 5px;
   margin-left: 5px;
   text-decoration: underline;
+}
+
+#comment-form {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#comment-form > {
+  display: block;
+  margin: 5px;
+}
+form {
+  margin: 5px;
+}
+form textarea {
+  display: block;
+  margin: 5px;
+  width: 50%;
+  height: 100px;
+}
+form button {
+  display: block;
+  margin: 5px;
 }

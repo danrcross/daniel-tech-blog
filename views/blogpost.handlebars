@@ -3,10 +3,10 @@
     <p>{{content}}</p>
     <p class="post-info">Post made by: <span class="username">{{user.username}}</span> @ {{post_date}}</p>
     {{#if loggedIn}}
-    <form>
-        <label for="comment">Leave a comment:</label>
-        <input type="text" id="comment-entry" name="comment-entry" required>
-        <button id="com-sub-btn"type="submit">Submit</button>
+    <form id="comment-form">
+        <label class="form-label"for="comment">Leave a comment:</label>
+        <textarea class="form-input" type="text" id="comment-entry" name="comment-entry" required></textarea>
+        <button class="form-button" type="submit" id="com-sub-btn">Submit</button>
     </form>
     {{/if}}
    

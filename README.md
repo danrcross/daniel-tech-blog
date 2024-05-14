@@ -32,7 +32,7 @@ I learned/practiced the following technologies/skills/concepts through the devel
 - One-to-many table relationships
 - Asynchronicity: async/await functions
 - MVC architecture
-- Handlebars.js implementation
+- Handlebars.js
 - Deploying an app that must connect to a remote MySQL database
 
 ## Table of Contents
@@ -47,6 +47,25 @@ I learned/practiced the following technologies/skills/concepts through the devel
 Visit the deployed app here: https://daniel-tech-blog-5cc96a923f6f.herokuapp.com/
 
 ## Usage
+
+Homepage view:
+![homepage](screenshots/homepage.png)
+Dashboard (not logged in):
+![dashboard-err](screenshots/dashboard-err.png)
+View post & comments (not logged in):
+![see-comments](screenshots/see-comments.png)
+Login page:
+![login](screenshots/login-page.png)
+Leaving a comment:
+![leave-comment](screenshots/leaving-comment.png)
+Comment created:
+![comment-left](screenshots/comments-left.png)
+Creating a post:
+![create-post](screenshots/creating-post.png)
+Post created:
+![post-created](screenshots/post-created.png)
+Creating a new user:
+![creating-user](screenshots/creating-user.png)
 
 ## License
 
