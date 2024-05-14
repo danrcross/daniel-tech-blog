@@ -32,7 +32,7 @@ I learned/practiced the following technologies/skills/concepts through the devel
 - One-to-many table relationships
 - Asynchronicity: async/await functions
 - MVC architecture
-- Handlebars.js implementation
+- Handlebars.js
 - Deploying an app that must connect to a remote MySQL database
 
 ## Table of Contents
